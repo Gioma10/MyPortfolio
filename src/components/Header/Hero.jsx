@@ -9,7 +9,7 @@ import Button from './HeroButton';
 export default function Hero(){
     return (
         <div className="bg-linear-to-t from-[#DEC295] to-[#42372C] h-screen">
-            <div className="flex justify-center items-center gap-10 h-screen ">
+            <div className="flex flex-col  md:flex-row justify-center items-center gap-10 h-screen ">
                 <motion.img 
                     initial={{x: 100, opacity: 0}} 
                     animate={{x: 0, opacity: 1}}
@@ -20,7 +20,7 @@ export default function Hero(){
                         damping: 60, 
                         duration: 2,
                     }} 
-                    className='rounded-full w-40 -rotate-45' src={Icon} alt="" />
+                    className='rounded-full smallest-img w-44 lg:w-52 -rotate-45' src={Icon} alt="" />
                 <motion.div
                     className='relative'
                     initial='hidden'
@@ -30,31 +30,31 @@ export default function Hero(){
                     }}>
                     <motion.p 
                         variants={itemVariants}
-                        className='text-xl text-[#42372C]'>Hi, I'm</motion.p>
+                        className='smallest-hello text-xl sm:text-xl lg:text-2xl text-[#42372C]'>Hi, I'm</motion.p>
                     <motion.h1 
                         variants={itemVariants}
-                        className='text-4xl text-[#53493F]'>Giovanni R. Mauro</motion.h1>
+                        className='smallest-title text-4xl sm:text-4xl lg:text-6xl text-[#53493F]'>Giovanni R. Mauro</motion.h1>
                     <motion.p 
                         variants={itemVariants}
-                        className='text-4xl text-[#DEC295]'>FRONT-END DEVELOPER</motion.p>
-                    <div className='absolute -bottom-10 flex gap-2'>
+                        className='smallest-title text-4xl sm:text-4xl lg:text-6xl text-[#DEC295]'>FRONT-END DEVELOPER</motion.p>
+                    <div className='absolute smallest-container-hero-btn -bottom-15  md:-bottom-10 lg:-bottom-15 flex justify-center md:justify-start w-full gap-4 md:gap-2'>
                         <Button 
                             variants={itemVariants}
                             href='../../assets/TheCurriculum.pdf'
                             download='TheCurriculum.pdf'> 
-                            <IoDocumentOutline />
+                            <IoDocumentOutline className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
                         <Button 
                             variants={itemVariants}
                             href='https://github.com/Gioma10'
                             target='_blank'> 
-                            <FaGithub />
+                            <FaGithub className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
                         <Button 
                             variants={itemVariants}
                             href='https://www.linkedin.com/in/giovanni-mauro-web-developer/'
                             target='_blank'> 
-                            <FaLinkedinIn />
+                            <FaLinkedinIn className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
                     </div>
                     

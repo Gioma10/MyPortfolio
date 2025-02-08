@@ -16,3 +16,22 @@ body{
         padding-inline: 20px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .smallest-img{
+        width: 150px;
+    }
+    .smallest-hello{
+        font-size: 15px;
+    }
+    .smallest-title{
+        font-size: 26px;
+    }
+    .smallest-hero-btn{
+        font-size: 15px;
+        
+    }
+    .smallest-container-hero-btn{
+        bottom: -40px;
+    }
+}

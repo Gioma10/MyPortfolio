@@ -25,9 +25,9 @@ export default function Navbar(){
             }}
             className="fixed flex justify-center w-full ">
             <div className="border-[#DEC295] rounded-4xl mt-4 border-2">
-                <ul className="text-[#837160] flex ">
+                <ul className="text-[#837160] flex text-sm sm:text-base lg:text-lg">
                     {navElements.map((item, index)=>{
-                        let classActive= 'py-1 px-8  cursor-pointer rounded-4xl'
+                        let classActive= 'py-1 px-6 md:px-8 rounded-4xl'
                         if(focusLi === index){
                             classActive +=  ' bg-[#DEC295]'
                         }
@@ -41,8 +41,9 @@ export default function Navbar(){
                                 whileTap={{ scale: 0.9 }}
                                 onFocus={()=>setFocusLi(index)}
                                 className={classActive}>
-                                    <a href="#AboutMe"></a>
-                                {item}
+                                    <a href={'#' + item}>
+                                        {item}
+                                    </a>
                             </motion.li>
                         )
                     })}
