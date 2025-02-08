@@ -1,4 +1,4 @@
-import Icon from '../assets/avatarProfile.png'
+import Icon from '../../assets/avatarProfile.png'
 import { motion } from "motion/react"
 import { IoDocumentOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
@@ -40,7 +40,7 @@ export default function Hero(){
                     <div className='absolute -bottom-10 flex gap-2'>
                         <Button 
                             variants={itemVariants}
-                            href='../assets/TheCurriculum.pdf'
+                            href='../../assets/TheCurriculum.pdf'
                             download='TheCurriculum.pdf'> 
                             <IoDocumentOutline />
                         </Button>

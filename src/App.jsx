@@ -1,4 +1,4 @@
-import Hero from "./components/Hero.jsx"
+import Hero from "./components/Header/Hero.jsx"
 import Navbar from "./components/Navbar.jsx"
 
 function App() {

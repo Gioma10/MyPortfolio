@@ -8,3 +8,11 @@
 body{
     font-family: king;
 }
+
+/* Navbar */
+
+@media screen and (max-width: 350px) {
+    li{
+        padding-inline: 20px;
+    }
+}

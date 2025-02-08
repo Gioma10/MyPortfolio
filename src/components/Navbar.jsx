@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Navbar(){
     const [focusLi, setFocusLi]= useState(null)
 
-    const navElements= ['Chi sono', 'Skills', 'Contatti']
+    const navElements= ['About me', 'Skills', 'Contacts']
     // Navbar animation 
     const navVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -27,7 +27,7 @@ export default function Navbar(){
             <div className="border-[#DEC295] rounded-4xl mt-4 border-2">
                 <ul className="text-[#837160] flex ">
                     {navElements.map((item, index)=>{
-                        let classActive= 'py-1 px-8 cursor-pointer rounded-4xl'
+                        let classActive= 'py-1 px-8  cursor-pointer rounded-4xl'
                         if(focusLi === index){
                             classActive +=  ' bg-[#DEC295]'
                         }
