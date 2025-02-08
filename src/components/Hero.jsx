@@ -1,16 +1,18 @@
 import Icon from '../assets/avatarProfile.png'
 import { motion } from "motion/react"
 import { IoDocumentOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
-import Button from './Button';
+import Button from './HeroButton';
 
 export default function Hero(){
     return (
         <div className="bg-linear-to-t from-[#DEC295] to-[#42372C] h-screen">
-            <div className="flex justify-center items-center gap-8 h-screen ">
+            <div className="flex justify-center items-center gap-10 h-screen ">
                 <motion.img 
-                    initial={{scale: 0, opacity: 0}} 
-                    animate={{scale:1, opacity: 1}}
+                    initial={{x: 100, opacity: 0}} 
+                    animate={{x: 0, opacity: 1}}
                     transition={{
                         type:'spring',
                         ease: "easeOut",
@@ -35,14 +37,28 @@ export default function Hero(){
                     <motion.p 
                         variants={itemVariants}
                         className='text-4xl text-[#DEC295]'>FRONT-END DEVELOPER</motion.p>
-                    <Button 
-                        variants={itemVariants}
-                        className='absolute -bottom-10 border-1 rounded-full py-1 px-3 text-[#53493F]'> 
-
-                        <IoDocumentOutline 
+                    <div className='absolute -bottom-10 flex gap-2'>
+                        <Button 
+                            variants={itemVariants}
                             href='../assets/TheCurriculum.pdf'
-                            download='TheCurriculum.pdf'/>
-                    </Button>
+                            download='TheCurriculum.pdf'> 
+                            <IoDocumentOutline />
+                        </Button>
+                        <Button 
+                            variants={itemVariants}
+                            href='https://github.com/Gioma10'
+                            target='_blank'> 
+                            <FaGithub />
+                        </Button>
+                        <Button 
+                            variants={itemVariants}
+                            href='https://www.linkedin.com/in/giovanni-mauro-web-developer/'
+                            target='_blank'> 
+                            <FaLinkedinIn />
+                        </Button>
+                    </div>
+                    
+                    
                 </motion.div>
 
             </div>
