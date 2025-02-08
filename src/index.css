@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: king;
+    src: url('./fonts/KIN668.TTF');
+}
+
+body{
+    font-family: king;
+}
