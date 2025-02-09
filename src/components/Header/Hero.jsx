@@ -7,13 +7,14 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Button from './HeroButton';
 import ScrollArrow from '../ScrollArrow';
 
+
 export default function Hero(){
     return (
-        <section className="bg-linear-to-t from-[#DEC295] to-[#42372C] h-screen relative z-0">
+        <div  className=" h-screen relative z-0">
             <div className="flex flex-col  md:flex-row justify-center items-center gap-10 h-screen ">
                 <motion.img 
                     initial={{x: 100, opacity: 0}} 
-                    animate={{x: 0, opacity: 1}}
+                    whileInView={{x: 0, opacity: 1}}
                     transition={{
                         type:'spring',
                         ease: "easeOut",
@@ -25,7 +26,7 @@ export default function Hero(){
                 <motion.div
                     className='relative'
                     initial='hidden'
-                    animate='visible'
+                    whileInView='visible'
                     variants={{
                         visible: { transition: { staggerChildren: 0.3 } },
                     }}>
@@ -60,8 +61,8 @@ export default function Hero(){
                     </div>
                 </motion.div>
             </div>
-            <ScrollArrow section='About me'/>
-        </section>
+            <ScrollArrow sectionId='about' section='About Me'/>
+        </div>
     )
 }
 

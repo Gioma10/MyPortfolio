@@ -1,16 +1,15 @@
 import { motion } from "motion/react"
 import { useState } from "react"
 import Description from "./Description";
-import { bottomLine, scaleUp, slideLeft, slideRight } from "../../animations/transition";
+import ScrollArrow from "../ScrollArrow";
+import { bottomLine, scaleUp, slideLeft } from "../../animations/transition";
 
 
 export default function AboutMe(){
     const[itaLanguage, setItaLanguage]=useState(false);
 
     return(
-        <section
-            id="About me"
-            className="h-screen bg-linear-to-t to-[#DEC295] from-[#42372C] flex justify-center item-center text-[#23201A]">
+        <div className=" h-screen flex justify-center item-center text-[#23201A] relative">
 
                 <div
                     className="flex flex-col justify-center items-center w-4/6">
@@ -46,7 +45,8 @@ export default function AboutMe(){
                             </div>
                         </div>
                         <Description lang={itaLanguage}/>
+                        <ScrollArrow sectionId='skills' section='Skills' color='text-[#DEC295]'/>
                 </div>
-        </section>
+        </div>
     )
 }
