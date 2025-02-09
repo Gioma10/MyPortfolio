@@ -4,9 +4,12 @@
     font-family: king;
     src: url('./fonts/KIN668.TTF');
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: king;
+    position: relative;
 }
 
 /* Navbar */

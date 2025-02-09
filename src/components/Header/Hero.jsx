@@ -5,10 +5,11 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
 import Button from './HeroButton';
+import ScrollArrow from '../ScrollArrow';
 
 export default function Hero(){
     return (
-        <div className="bg-linear-to-t from-[#DEC295] to-[#42372C] h-screen">
+        <section className="bg-linear-to-t from-[#DEC295] to-[#42372C] h-screen relative z-0">
             <div className="flex flex-col  md:flex-row justify-center items-center gap-10 h-screen ">
                 <motion.img 
                     initial={{x: 100, opacity: 0}} 
@@ -33,7 +34,7 @@ export default function Hero(){
                         className='smallest-hello text-xl sm:text-xl lg:text-2xl text-[#42372C]'>Hi, I'm</motion.p>
                     <motion.h1 
                         variants={itemVariants}
-                        className='smallest-title text-4xl sm:text-4xl lg:text-6xl text-[#53493F]'>Giovanni R. Mauro</motion.h1>
+                        className='smallest-title text-4xl sm:text-4xl lg:text-6xl text-[#23201A]'>Giovanni R. Mauro</motion.h1>
                     <motion.p 
                         variants={itemVariants}
                         className='smallest-title text-4xl sm:text-4xl lg:text-6xl text-[#DEC295]'>FRONT-END DEVELOPER</motion.p>
@@ -57,12 +58,10 @@ export default function Hero(){
                             <FaLinkedinIn className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
                     </div>
-                    
-                    
                 </motion.div>
-
             </div>
-        </div>
+            <ScrollArrow section='About me'/>
+        </section>
     )
 }
 
