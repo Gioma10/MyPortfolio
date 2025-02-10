@@ -8,7 +8,7 @@
 
 
   export const slideLeft = (duration = 0.8, delay = 0) => ({
-    initial: { opacity: 0, x: 100 },
+    initial: { opacity: 0, x: 80 },
     whileInView: { opacity: 1, x: 0, transition: { duration, delay } },
     viewport:{ once: false, amount: 0.5 }, // Attiva quando il 50% dell'elemento è visibile
     exit: { opacity: 0, x: -100, transition: { duration } }

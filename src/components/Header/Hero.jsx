@@ -61,7 +61,7 @@ export default function Hero(){
                     </div>
                 </motion.div>
             </div>
-            <ScrollArrow sectionId='about' section='About Me'/>
+            <ScrollArrow sectionId='about' section='About Me' delayAnimation={2}/>
         </div>
     )
 }

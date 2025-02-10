@@ -5,7 +5,7 @@ import { slideUp } from "../../animations/transition";
 
 export default function Description({lang}){
     
-
+let classDesc= "p-10 text-start text-xs sm:text-base md:text-lg lg:text-xl italic"
 
 
     return (
@@ -15,7 +15,7 @@ export default function Description({lang}){
             {lang ? 
                     <p 
                         
-                        className="p-10 text-start text-xl italic ">
+                        className={classDesc}>
                         Junior Front-end developer con background informatico e competenze programmazione
                         acquisite grazie ad un Coding Bootcamp basato sulla programmazione per oggetto e
                         metodologia agile Scrum. Professionalità, buone capacità di logica, comunicazione e
@@ -25,7 +25,7 @@ export default function Description({lang}){
                     :
                     <p 
                         
-                        className="p-10 text-start text-xl italic">
+                        className={classDesc}>
                             Junior Front-end developer with IT background and programming skills
                             acquired thanks to a Coding Bootcamp based on object programming e
                             agile Scrum methodology. Professionalism, good logic, communication and

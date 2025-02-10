@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 import { useState } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 
-export default function ScrollArrow({sectionId, section}){
+export default function ScrollArrow({sectionId, section, delayAnimation}){
   const [seeSection, setSeeSection]= useState(false)
     return (
         <motion.div 
@@ -27,8 +27,8 @@ export default function ScrollArrow({sectionId, section}){
           <motion.a
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
-            viewport={{once: false, amount: 1}}
-            transition={{duration: 1, delay: 2, ease: 'easeInOut'}}
+            viewport={{once: false, amount: 0.5}}
+            transition={{duration: 1, delay: delayAnimation, ease: 'easeInOut'}}
             href={'#'+sectionId}
             className="cursor-pointer relative w-full flex justify-center"
            >

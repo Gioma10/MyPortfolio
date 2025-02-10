@@ -11,9 +11,9 @@ body{
 
 /* Navbar */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     li{
-        padding-inline: 20px;
+        padding-inline: 15px;
     }
 }
 
