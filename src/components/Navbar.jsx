@@ -1,9 +1,9 @@
 import { motion } from "motion/react"
-import { useState } from "react";
+// import { useState } from "react";
 
 
-export default function Navbar({navElements}){
-    const [focusLi, setFocusLi]= useState(null)
+export default function Navbar({navElements, activeId}){
+    // const [focusLi, setFocusLi]= useState(null)
 
     
     // Navbar animation 
@@ -29,19 +29,20 @@ export default function Navbar({navElements}){
                 <ul className="text-[#837160] flex text-sm sm:text-base lg:text-lg">
                     {navElements.map(({title, id})=>{
                         let classActive= 'py-1 px-6 md:px-8 rounded-4xl cursor-pointer '
-                        if((focusLi === id)){
+                        if((activeId === id)){
                             classActive +=  ' bg-[#DEC295]';
                         }
                         return(
                             <a
                                 key={id}
                                 href={`#${id}`}
-                                onClick={()=>setFocusLi(id)}>
+                                // onClick={()=>setFocusLi(id)}
+                                >
                                 <motion.li
                                     variants={navVariants} // Variants per l'animazione iniziale
                                     initial="hidden"
                                     animate="visible"
-                                    whileHover={focusLi === id ? { color: "#837160" } : { y: -3, color: "#DEC295" } } // Effetto al passaggio del mouse (beige e sollevato)
+                                    whileHover={activeId === id ? { color: "#837160" } : { y: -3, color: "#DEC295" } } // Effetto al passaggio del mouse (beige e sollevato)
                                     whileTap={{ scale: 0.9 }}
                                     className={classActive}
                                     >
