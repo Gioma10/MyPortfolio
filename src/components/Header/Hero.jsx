@@ -11,7 +11,7 @@ import ScrollArrow from '../ScrollArrow';
 export default function Hero(){
     return (
         <div  className=" h-screen relative z-0">
-            <div className="flex flex-col  md:flex-row justify-center items-center gap-10 h-screen ">
+            <div className="flex flex-col  md:flex-row justify-center items-center gap-2 md:gap-10 h-screen ">
                 <motion.img 
                     initial={{x: 100, opacity: 0}} 
                     whileInView={{x: 0, opacity: 1}}

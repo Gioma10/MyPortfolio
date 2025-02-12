@@ -19,7 +19,7 @@ body{
 
 @media screen and (max-width: 450px) {
     .smallest-img{
-        width: 150px;
+        width: 120px;
     }
     .smallest-hello{
         font-size: 15px;
@@ -33,5 +33,10 @@ body{
     }
     .smallest-container-hero-btn{
         bottom: -40px;
+    }
+}
+@media screen and (max-height: 600px) {
+    .smallest-gap{
+        gap: calc(var(--spacing) * 1) /* 0.25rem = 4px */;
     }
 }

@@ -29,7 +29,7 @@ export default function Navbar({navElements}){
                 <ul className="text-[#837160] flex text-sm sm:text-base lg:text-lg">
                     {navElements.map(({title, id})=>{
                         let classActive= 'py-1 px-6 md:px-8 rounded-4xl cursor-pointer '
-                        if(focusLi === id){
+                        if((focusLi === id)){
                             classActive +=  ' bg-[#DEC295]';
                         }
                         return(

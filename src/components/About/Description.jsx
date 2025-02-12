@@ -10,6 +10,7 @@ let classDesc= "p-10 text-start text-xs sm:text-base md:text-lg lg:text-xl itali
 
     return (
         <motion.div
+            key={lang}
             {...slideUp(1,0)}
             >
             {lang ? 
