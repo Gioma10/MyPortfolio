@@ -67,10 +67,10 @@ export default function ContactMe(){
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className=" bg-[#DEC295] p-8 rounded-2xl shadow-lg text-center w-4/6"
+                    className="bg-[#F5EDE2] p-6 sm:p-8 rounded-2xl shadow-lg text-center w-5/6 sm:w-4/6"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#837160] mb-4">Contact me</h2>
-                    <p className="text-[#837160] mb-6">Do you have a project or collaboration in mind? Write to me!</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#837160] mb-2 sm:mb-4">Contact me</h2>
+                    <p className="text-[#837160] smallest-p-form text-xs sm:text-base md:text-lg mb-3 sm:mb-6">Do you have a project or collaboration in mind? Write to me!</p>
                     {/* Messaggio di successo o errore */}
                     {statusMessage && (
                         <motion.div
@@ -84,7 +84,7 @@ export default function ContactMe(){
                             {statusMessage.text}
                         </motion.div>
                     )}
-                    <form ref={form} onSubmit={sendEmail} className="space-y-8">
+                    <form ref={form} onSubmit={sendEmail} className=" space-y-2 md:space-y-8">
                         <Input
                             placeholder="Name"
                             name="from_name"
@@ -119,7 +119,7 @@ export default function ContactMe(){
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="mt-4 bg-[#C9A66B] cursor-pointer text-white py-3 px-6 rounded-xl shadow-md"
+                            className="mt-1 sm:mt-4 bg-[#837160] cursor-pointer text-[#DEC295] py-1 px-4 md:py-3 md:px-6 rounded-xl shadow-md"
                         >
                             Send
                         </motion.button>
