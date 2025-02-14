@@ -3,6 +3,8 @@ import { motion } from "motion/react"
 import { IoDocumentOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { LuInstagram } from "react-icons/lu";
+import { LuYoutube } from "react-icons/lu";
 
 import Button from './HeroButton';
 import ScrollArrow from '../ScrollArrow';
@@ -57,6 +59,18 @@ export default function Hero(){
                             href='https://www.linkedin.com/in/giovanni-mauro-web-developer/'
                             target='_blank'> 
                             <FaLinkedinIn className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
+                        </Button>
+                        <Button 
+                            variants={itemVariants}
+                            href='https://www.instagram.com/gioma_code/'
+                            target='_blank'> 
+                            <LuInstagram className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
+                        </Button>
+                        <Button 
+                            variants={itemVariants}
+                            href='https://www.youtube.com/@GRMauro17'
+                            target='_blank'> 
+                            <LuYoutube className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
                     </div>
                 </motion.div>
