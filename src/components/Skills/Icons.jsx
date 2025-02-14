@@ -1,4 +1,4 @@
-import { skills } from "./DataIcons"
+import { skills } from "./dataIcons.js"
 import CircularProgress from "./CircularProgress"
 
 export default function Icons({i}){
