@@ -84,7 +84,7 @@ export default function ContactMe(){
                             {statusMessage.text}
                         </motion.div>
                     )}
-                    <form ref={form} onSubmit={sendEmail} className=" space-y-2 md:space-y-8">
+                    <form ref={form} onSubmit={sendEmail} className=" space-y-4 md:space-y-8">
                         <Input
                             placeholder="Name"
                             name="from_name"
