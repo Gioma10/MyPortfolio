@@ -26,9 +26,9 @@ export default function Navbar({navElements, activeId}){
             }}
             className="fixed flex justify-center w-full z-10">
             <div className="border-[#DEC295] rounded-4xl mt-4 border-2">
-                <ul className="text-[#837160] flex text-sm sm:text-base lg:text-lg">
+                <ul className="text-[#837160] flex text-xs sm:text-base lg:text-lg">
                     {navElements.map(({title, id})=>{
-                        let classActive= 'py-1 px-6 md:px-8 rounded-4xl cursor-pointer '
+                        let classActive= 'py-1 px-4 md:px-8 rounded-4xl cursor-pointer '
                         if((activeId === id)){
                             classActive +=  ' bg-[#DEC295]';
                         }

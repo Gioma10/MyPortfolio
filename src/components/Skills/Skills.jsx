@@ -44,7 +44,7 @@ export default function Skills(){
                     {...slideUp(1,0)}
                     className="flex gap-4 justify-center items-center text-xl">
                     <IoMdArrowDropleft onClick={()=>handleChangeSkills('-')} className="cursor-pointer"/>
-                        <div className="relative w-20 md:w-28 lg:w-40 h-20 flex items-center justify-center overflow-hidden">
+                        <div className="relative w-24 md:w-28 lg:w-40 h-20 flex items-center justify-center overflow-hidden">
                             <AnimatePresence mode="wait">
                                 <motion.p
                                     key={currentIndex} // Cambia la chiave per innescare il re-render
