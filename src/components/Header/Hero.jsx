@@ -34,7 +34,7 @@ export default function Hero(){
                     }}>
                     <motion.p 
                         variants={itemVariants}
-                        className='smallest-hello text-xl sm:text-xl lg:text-2xl text-[#42372C]'>Hi, I'm</motion.p>
+                        className='smallest-hello text-xl sm:text-xl lg:text-2xl text-[#42372C]'>Hi, I am</motion.p>
                     <motion.h1 
                         variants={itemVariants}
                         className='smallest-title text-4xl sm:text-4xl lg:text-6xl text-[#23201A]'>Giovanni R. Mauro</motion.h1>
@@ -44,7 +44,7 @@ export default function Hero(){
                     <div className='absolute smallest-container-hero-btn -bottom-15  md:-bottom-10 lg:-bottom-15 flex justify-center md:justify-start w-full gap-4 md:gap-2'>
                         <Button 
                             variants={itemVariants}
-                            href='../../assets/TheCurriculum.pdf'
+                            href='/TheCurriculum.pdf'
                             download='TheCurriculum.pdf'> 
                             <IoDocumentOutline className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
