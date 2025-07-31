@@ -44,8 +44,8 @@ export default function Hero(){
                     <div className='absolute smallest-container-hero-btn -bottom-15  md:-bottom-10 lg:-bottom-15 flex justify-center md:justify-start w-full gap-4 md:gap-2'>
                         <Button 
                             variants={itemVariants}
-                            href='/TheCurriculum.pdf'
-                            download='TheCurriculum.pdf'> 
+                            href='/TheCv.pdf'
+                            download='TheCv.pdf'> 
                             <IoDocumentOutline className='smallest-hero-btn text-2xl md:text-lg lg:text-2xl'/>
                         </Button>
                         <Button 
